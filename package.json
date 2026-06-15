@@ -1,0 +1,32 @@
+{
+  "name": "wipecodeuu",
+  "version": "1.0.1",
+  "description": "Zero-config Prettier setup CLI — installs prettier + plugins and writes config files in one command",
+  "bin": {
+    "wipecodeuu": "bin/codeuu.js"
+  },
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "node ./bin/codeuu.js --force && npx prettier --write .",
+    "format": "npx prettier --write .",
+    "start": "node ./bin/codeuu.js"
+  },
+  "keywords": [
+    "prettier",
+    "cli",
+    "formatter",
+    "tailwind",
+    "imports",
+    "zero-config"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^6.0.2",
+    "prettier": "^3.8.4",
+    "prettier-plugin-tailwindcss": "^0.8.0"
+  }
+}
