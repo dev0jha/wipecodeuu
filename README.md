@@ -1,4 +1,5 @@
 # wipecodeuu
+![wipecodeuu preview](assests/wipecodeuu.png)
 
 [![npm](https://img.shields.io/npm/v/wipecodeuu)](https://www.npmjs.com/package/wipecodeuu)
 [![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
@@ -37,3 +38,7 @@ bunx wipecodeuu    # bun
 pnpx wipecodeuu   # pnpm
 yarn dlx wipecodeuu  # yarn
 ```
+
+
+
+
