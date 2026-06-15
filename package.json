@@ -1,6 +1,6 @@
 {
   "name": "wipecodeuu",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Zero-config Prettier setup CLI — installs prettier + plugins and writes config files in one command",
   "bin": {
     "wipecodeuu": "bin/codeuu.js"
