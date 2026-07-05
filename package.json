@@ -1,6 +1,6 @@
 {
   "name": "wipecodeuu",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Zero-config Prettier setup CLI — installs prettier + plugins and writes config files in one command",
   "bin": {
     "wipecodeuu": "bin/codeuu.js"
@@ -9,9 +9,17 @@
   "type": "module",
   "scripts": {
     "setup": "node ./bin/codeuu.js --force && npx prettier --write .",
-    "format": "npx prettier --write .",
-    "start": "node ./bin/codeuu.js"
+    "start": "node ./bin/codeuu.js",
+    "check-type": "tsc --noEmit",
+    "format": "prettier --write  \"**/*.{ts,tsx,js,jsx,json,md,mdx,css}\"",
+    "format:check": "prettier --check  \"**/*.{ts,tsx,js,jsx,json,md,mdx,css}\""
   },
+  "files": [
+    "bin",
+    "src",
+    "templates",
+    "README.md"
+  ],
   "keywords": [
     "prettier",
     "cli",

@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 import { detectPackageManager } from "./detect-pm.js";
 import { installPlugins, installPrettier } from "./install-deps.js";
-import { writeConfigFile } from "./write-files.js";
+import { addScriptsToPackageJson, writeConfigFile } from "./write-files.js";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const pkg = JSON.parse(
@@ -130,6 +130,8 @@ async function main() {
 
   writeConfigFile(cwd, ".prettierrc.json", prettierRc, flags.force);
   writeConfigFile(cwd, ".prettierignore", prettierIgnore, flags.force);
+
+  addScriptsToPackageJson(cwd);
 
   printSuccess();
 }
